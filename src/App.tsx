@@ -261,7 +261,7 @@ function App() {
                 <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <img 
-                      src="./assets/imag2.png" 
+                      src="imag2.png" 
                       alt="Meli Fouomene Divine" 
                       className="w-44 h-44 rounded-full object-cover"
                     />
