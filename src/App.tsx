@@ -261,7 +261,7 @@ function App() {
                 <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <img 
-                      src="imag2.png" 
+                      src="./assets/imag2.jpg" 
                       alt="Meli Fouomene Divine" 
                       className="w-44 h-44 rounded-full object-cover"
                     />
@@ -283,14 +283,14 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
+              {/* <a 
                 href="assets/CVMFD.pdf"
                 download
                 className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Télécharger mon CV
-              </a>
+              </a> */}
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="inline-flex items-center px-8 py-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
