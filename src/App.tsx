@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+
 import { 
   Menu, 
   X, 
@@ -127,14 +129,25 @@ function App() {
 
     setIsSubmitting(true);
     
-    // Simulation d'envoi (remplacer par votre API)
     try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setFormStatus({ 
-        type: 'success', 
-        message: 'Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.' 
-      });
-      setFormData({ name: '', email: '', message: '' });
+      const result = await emailjs.send(
+        'service_u4odl8c', // Remplacez par votre Service ID
+        'template_sws2tqm', // Remplacez par votre Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        'MY05a8Pj6RvsXC3pU' // Remplacez par votre Public Key
+      );
+
+      if (result.status === 200) {
+        setFormStatus({ 
+          type: 'success', 
+          message: 'Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.' 
+        });
+        setFormData({ name: '', email: '', message: '' });
+      }
     } catch (error) {
       setFormStatus({ 
         type: 'error', 
