@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import imag2.jpg from '../assets/imag2.jpg';
-import image.png from '../assets/image.pg';
+import imag2 from '../assets/imag2.jpg';
+
 import { 
   Menu, 
   X, 
@@ -262,7 +262,7 @@ function App() {
                 <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <img 
-                  src="./assets/image.png"
+                  src= {${import.meta.env.BASE_URL}./assets/image.png}
                   alt="Meli Fouomene Divine" 
                   className="w-44 h-44 rounded-full object-cover"
                   />
