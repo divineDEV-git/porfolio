@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import imag2 from '../assets/imag2.jpg';
-import image from '../assets/image.jng';
+import image from '../assets/image.pg';
 import { 
   Menu, 
   X, 
@@ -262,10 +262,14 @@ function App() {
                 <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <img 
-                      src="{imag2.jpg}" 
-                      alt="Meli Fouomene Divine" 
-                      className="w-44 h-44 rounded-full object-cover"
-                    />
+                  // Chemin incorrect
+                  src="/image.png"
+                  
+                  // Devrait être
+                  src="./assets/image.png" 
+                  alt="Meli Fouomene Divine" 
+                  className="w-44 h-44 rounded-full object-cover"
+                  />
                   </div>
                 </div>
                 
@@ -417,7 +421,7 @@ function App() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden">
                   <img 
-                    src="{image.png}" 
+                    src="./assets/image.png" 
                     alt="Projet E-commerce"
                     className="w-full h-64 lg:h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
