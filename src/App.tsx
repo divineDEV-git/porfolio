@@ -162,6 +162,7 @@ function App() {
     { name: 'CSS3', level: 60, color: 'bg-blue-500' },
     { name: 'JavaScript', level: 30, color: 'bg-yellow-500' },
     { name: 'PHP', level: 50, color: 'bg-purple-500' },
+    { name: 'java', level: 30, color: 'bg-yellow-500' },
     { name: 'Microsoft Word', level: 85, color: 'bg-blue-600' }
   ];
 
