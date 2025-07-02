@@ -262,7 +262,7 @@ function App() {
                 <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-blue-600 to-purple-600 p-1">
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <img 
-                  src= {`${import.meta.env.BASE_URL}images/image.png`}
+                  src= {`${import.meta.env.BASE_URL}images/imag2.jpg`}
                   alt="Meli Fouomene Divine" 
                   className="w-44 h-44 rounded-full object-cover"
                   />
@@ -417,7 +417,7 @@ function App() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden">
                   <img 
-                    src="./assets/image.png" 
+                     src= {`${import.meta.env.BASE_URL}images/image.png`}
                     alt="Projet E-commerce"
                     className="w-full h-64 lg:h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
